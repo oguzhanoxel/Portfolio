@@ -2,26 +2,36 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
 
-## Development server
+### Initial Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. git clone https://github.com/oguzhanoxel/Portfolio.git
+2. cd portfolio
+3. npm install
+4. ng serve
 
-## Code scaffolding
+### Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Ekran Alıntısı](https://user-images.githubusercontent.com/54795142/119204165-77f35680-ba9d-11eb-811a-796fdb00e91d.PNG)
 
-## Build
+|*Home Page 1*|
+|:--:|
+|![HomePage1](https://user-images.githubusercontent.com/54795142/119203492-d4ee0d00-ba9b-11eb-9f6c-20b08cf6fd10.PNG)|
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+|*Home Page 2*|
+|:--:|
+|![HomePage2](https://user-images.githubusercontent.com/54795142/119204001-0fa47500-ba9d-11eb-9981-2357b1c4df91.PNG)|
 
-## Running unit tests
+|*About*|
+|:--:|
+|![About](https://user-images.githubusercontent.com/54795142/119204054-31056100-ba9d-11eb-95ee-cb4b5755f8a8.PNG)|
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+|*Projects*|
+|:--:|
+|![Projects](https://user-images.githubusercontent.com/54795142/119204128-51cdb680-ba9d-11eb-8462-ad35c1bc92e2.PNG)|
 
-## Running end-to-end tests
+|*Comments*|
+|:--:|
+|![Comments](https://user-images.githubusercontent.com/54795142/119204213-8fcada80-ba9d-11eb-9c82-9fb0baf051e8.PNG)|
+|![new-comment](https://user-images.githubusercontent.com/54795142/119204232-9eb18d00-ba9d-11eb-944c-29506c3773b1.PNG)|
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
