@@ -1,0 +1,40 @@
+<ng-container *ngIf="currentUser">
+
+  <main role="main">
+  
+    <section class="jumbotron text-center">
+      <div class="container">
+        <img src="assets/img/profile.jpg" class="avatar" alt="Avatar">
+        <h1 class="jumbotron-heading">{{ currentUser.firstName}} {{ currentUser.lastName }}</h1>
+        <p class="lead text-muted">{{ currentUser.description }}</p>
+        <!-- <p>
+          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p> -->
+      </div>
+    </section>
+  
+    <div class="album py-5 bg-light">
+      <div class="container">
+  
+        <div class="row">
+          <div class="col-md-4" *ngFor="let project of githubProjects">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top" src="assets/img/defaultProjectImage.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description | truncate:100 }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="{{ project.url }}" class="btn btn-sm btn-outline-secondary">Go to the repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </main>
+</ng-container>

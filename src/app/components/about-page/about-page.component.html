@@ -1,0 +1,25 @@
+<ng-container *ngIf="currentUser">
+    <div class="card mb-12">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/img/profile.jpg" style=" height: 100%; width: 100%; object-fit: contain; " alt="profile">
+          </div>
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="card-body text-center">
+                <h3 class="card-title">{{ currentUser.firstName }} {{ currentUser.lastName }}</h3>
+                <p class="card-text">{{ currentUser.description }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card mb-12 my-2 p-5 text-center">
+        <h3 class="card-title">İletişim bilgileri</h3>
+        <div class="fw-bold">Phone: <a>{{ currentUser.phone }}</a></div>
+        <div class="fw-bold">E-mail: <a>{{ currentUser.email }}</a></div>
+        <div class="fw-bold">Github: <a href="{{ currentUser.github }}" class="fw-normal">{{ currentUser.github }}</a></div>
+        <div class="fw-bold">Linkedin: <a href="{{ currentUser.linkedin }}" class="fw-normal">{{ currentUser.linkedin }}</a></div>
+        <div class="fw-bold">Instagram: <a href="{{ currentUser.twitter }}" class="fw-normal">{{ currentUser.twitter }}</a></div>
+        <div class="fw-bold">Twitter: <a href="{{ currentUser.twitter }}" class="fw-normal">{{ currentUser.twitter }}</a></div>    
+        <div class="fw-bold">Address: <a>{{ currentUser.address }}</a></div>    
+    </div>
+</ng-container>

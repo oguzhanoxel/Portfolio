@@ -1,0 +1,16 @@
+<div class="card mb-12 my-4" *ngFor="let project of githubProjects">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="assets/img/defaultProjectImage.jpg" style=" height: 100%; width: 100%; object-fit: contain; " alt="profile">
+      </div>
+      <div class="col-md-8 d-flex align-items-center">
+        <div class="card-body text-center">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <p class="card-text">{{ project.description }}</p>
+            <div class="btn-group">
+                <a href="{{ project.url }}" class="btn btn-sm btn-outline-secondary">Go to the repo</a>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

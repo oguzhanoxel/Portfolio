@@ -1,0 +1,18 @@
+<form [formGroup]="commentAddForm">
+    <div class="mb-3">
+        <div class="form-group">
+            <label for="commentInput" class="form-label"><h4>Leave a comment</h4></label>
+            <textarea formControlName="content" type="text" class="form-control" id="content" rows="5" placeholder="..."></textarea>
+        </div>
+    </div>
+    <button type="submit" (click)="createComment()" class="btn btn-primary">Post Comment</button>
+</form>
+
+<div class="col-12 my-5 pb-4">
+    <h4>Comments</h4>
+    <div *ngFor="let comment of comments" class="text-justify darker mt-4 float-right"> <img src="https://i.imgur.com/CFpa3nK.jpg" alt="" class="rounded-circle" width="40" height="40">
+        <h4>anonymous user</h4> <span>- 11.03.2020</span> <br>
+        <p>{{ comment.content }}</p>
+        <button class="btn btn-danger btn-sm" (click)="deleteComment(comment)">Delete</button>
+    </div>
+</div>
